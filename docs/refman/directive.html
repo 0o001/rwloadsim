@@ -1,5 +1,5 @@
 <!-- Creator     : groff version 1.22.3 -->
-<!-- CreationDate: Mon Jun 12 13:41:21 2023 -->
+<!-- CreationDate: Wed Jun 21 08:09:59 2023 -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -207,7 +207,7 @@ behavior can be set using <b>$implicit:lowercase</b>.</p>
 
 <p style="margin-left:11%; margin-top: 1em"><b>$bindoutname:on
 <br>
-$bindoutname:on:identifiersuffix <br>
+$bindoutname:on:identifierprefix <br>
 $bindoutname:off</b></p>
 
 <p style="margin-left:17%;">These directives control how
@@ -226,13 +226,13 @@ need an explicit bindout.</p>
 <p style="margin-left:17%; margin-top: 1em">If you use
 either of the first two <b>$bindoutname</b> directives, a
 bindout will automatically be used whenever the name of the
-bind variable (placeholder) in your SQL or PL/SQL text has a
-specific suffix. With the first directive, the suffix is the
-three letters &rsquo;out&rsquo;, with the second directive,
-the suffix is the identifier suffix found after the second
-&rsquo;:&rsquo;. In that case, the identifier suffix must
-consist of an initial letter, followed by letters, numerals
-or underscore.</p>
+bind variable (placeholder) in your SQL or PL/SQL text has
+some initial characters. With the first directive, the
+prefix characters are the three letters &rsquo;out&rsquo;,
+with the second directive, the initial characters is the
+identifier prefix found after the second &rsquo;:&rsquo;. In
+that case, the identifier prefix must consist of an initial
+letter, followed by letters, numerals or underscore.</p>
 
 <p style="margin-left:17%; margin-top: 1em">Lowercase
 conversion is controlled via the $lowercase directive as

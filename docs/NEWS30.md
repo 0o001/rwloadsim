@@ -5,9 +5,10 @@ imply a bindout should be used via the $bindoutname:on directive.
 A bind is made into a bindout when the name of the placeholder
 begins with a certain text string, which by default is "out".
 As an example
+```
 $bindoutname:on
 string outdate;
-```
+
 begin
   :outdate := to_char(sysdate,'YYYY.MM.DD HH24:MI:SS');
 end;

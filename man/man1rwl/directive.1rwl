@@ -149,7 +149,7 @@ The default behavior can be set using \fB$implicit:lowercase\fR.
 .PP
 .B $bindoutname:on
 .br
-.B $bindoutname:on:identifiersuffix
+.B $bindoutname:on:identifierprefix
 .br
 .B $bindoutname:off
 .RS 4
@@ -163,10 +163,10 @@ output to your rwl program, you normally need an explicit bindout.
 .P
 If you use either of the first two \fB$bindoutname\fR directives, a bindout will automatically
 be used whenever the name of the bind variable (placeholder) in your SQL or PL/SQL text
-has a specific suffix. 
-With the first directive, the suffix is the three letters 'out', with the second directive,
-the suffix is the identifier suffix found after the second ':'.
-In that case, the identifier suffix must consist of an initial letter, followed by letters,
+has some initial characters.
+With the first directive, the prefix characters are the three letters 'out', with the second directive,
+the initial characters is the identifier prefix found after the second ':'.
+In that case, the identifier prefix must consist of an initial letter, followed by letters,
 numerals or underscore.
 .P
 Lowercase conversion is controlled via the $lowercase directive as explained above.
